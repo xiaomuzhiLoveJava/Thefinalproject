@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton_give_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="fill"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="人情笔记"
+                android:textSize="35dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_search" />
+
+        </LinearLayout>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="true"
+            android:selectedDateVerticalBar="@color/design_default_color_error"
+            android:selectedWeekBackgroundColor="@color/design_default_color_error"
+            android:showWeekNumber="true"
+            android:shownWeekCount="@android:integer/config_shortAnimTime"
+            android:unfocusedMonthDateColor="@color/colorPrimaryDark" />
+
+        <ListView
+            android:id="@+id/listview_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+</FrameLayout>
